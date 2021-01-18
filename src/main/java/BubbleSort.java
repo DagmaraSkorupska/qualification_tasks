@@ -1,8 +1,6 @@
-
 public class BubbleSort {
 
-
-    public void sort(int[] tab) {
+    public int[] sort(int[] tab) {
         int size = tab.length;
         int temp = 0;
         boolean isChange;
@@ -21,5 +19,6 @@ public class BubbleSort {
                 break;
             }
         }
+        return tab;
     }
 }
