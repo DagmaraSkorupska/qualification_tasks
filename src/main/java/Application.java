@@ -1,3 +1,4 @@
+import java.util.Random;
 
 public class Application {
     public static void main(String[] args) {
@@ -11,11 +12,20 @@ public class Application {
 //        Number task = new Number();
 //        task.number0for100();
 
-        int[] tab = {107, 36, -9, 0, 26, 85};
+
+        Random generator = new Random();
+        int[] tab = new int[15];
+        for (int i = 0; i < tab.length; i++) {
+            tab[i] = generator.nextInt(1000);
+        }
+
+
+
         BubbleSort bubbleSort = new BubbleSort();
         bubbleSort.sort(tab);
+
         System.out.print("The contents of the sorted array: ");
-        for(int element : tab){
+        for (int element : tab) {
             System.out.print(" " + element);
         }
     }

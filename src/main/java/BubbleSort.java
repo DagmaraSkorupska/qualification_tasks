@@ -17,7 +17,7 @@ public class BubbleSort {
                     isChange = true;
                 }
             }
-            if(isChange == false){
+            if(!isChange){
                 break;
             }
         }
