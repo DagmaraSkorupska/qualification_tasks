@@ -4,5 +4,7 @@ Number.java
  Number
 BubbleSort.java
  BubbleSort
+BinarySearch.java
+ BinarySearch
 Application.java
  Application
