@@ -1,15 +1,21 @@
+
 import java.util.Random;
 import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) {
 
-        System.out.println("Fibonacci: ");
+
         Fibonacci fibonacci = new Fibonacci();
-        for(int i = 1; i < 10; i++){
-            System.out.println(fibonacci.fib(i));
+        System.out.println("Fibonacci recurrent: ");
+        for (int i = 1; i < 10; i++) {
+            System.out.println(fibonacci.fibR(i));
         }
-        System.out.println();
+        System.out.println("Fibonacci iteratively: ");
+        for (int i = 1; i < 10; i++) {
+            System.out.println(fibonacci.fibI(i));
+        }
+        System.out.println("");
 
         System.out.println("Class Number: ");
         Number task = new Number();
@@ -45,9 +51,5 @@ public class Application {
         for (int element : tab) {
             System.out.print(" " + element);
         }
-
-
-
-
     }
 }
